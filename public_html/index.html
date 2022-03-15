@@ -61,7 +61,7 @@
                             <div id="corner-tl" class="corner"></div>
                             <div id="corner-tr" class="corner"></div>
                             <h3>What I do</h3>
-                            <p>Professional College Student</p>
+                            <p>Software Developer/Engineer and<br>Professional College Student</p>
                             <div id="corner-bl" class="corner"></div>
                             <div id="corner-br" class="corner"></div>
                         </div>
@@ -78,7 +78,7 @@
                 <div class="about-me"> 
                     <h4>More about me</h4>
 
-                    <p>Stuf</p>
+                    <p>Stuff</p>
 
                     <p>Stuff pt. 2</p>
 
@@ -160,26 +160,29 @@
 
     <section class="s2"> 
         <div class="main-container"> 
-            <h3 style="text-align: center;">Contact Me</h3>
+            <div class="contact-wrapper">
+                <form id="contact-form">
+                    <h3 style="text-align: center;">Contact Me</h3>  
+                    <a name="contact"></a>
 
-            <form id="contact-form">
-				<a name="contact"></a>
+                    <label>Name</label>
+                    <input class="input-field" type="text" name="name">
 
-				<label>Name</label>
-				<input class="input-field" type="text" name="name">
+                    <label>Subject</label>
+                    <input class="input-field" type="text" name="subject">
 
-				<label>Subject</label>
-				<input class="input-field" type="text" name="subject">
+                    <label>Email</label>
+                    <input class="input-field" type="text" name="email">
 
-				<label>Email</label>
-				<input class="input-field" type="text" name="email">
+                    <label>Message</label>
+                    <textarea class="input-field" name="message"></textarea>
 
-				<label>Message</label>
-				<textarea class="input-field" name="message"></textarea>
-
-				<input id="submit-btn" type="submit" value="Send">
-			</form>
-
+                    <input id="submit-btn" type="submit" value="Send">
+                </form>
+                <div class="socials">
+                    <h3 style="text-align: center;">Contact Information</h3>
+                </div>
+            </div>
         </div>
     </section>
     
