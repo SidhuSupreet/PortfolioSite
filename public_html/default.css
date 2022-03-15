@@ -196,6 +196,9 @@ h6 {font-size: 16px;}
 }
 
 #light-mode{
+    height: 11px;
+    width: 11px;
+    margin: 5px;
     background-color: #fff;
 }
 
