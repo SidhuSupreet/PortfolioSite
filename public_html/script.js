@@ -205,9 +205,9 @@ function drawScore() {
 
 document.body.addEventListener('keydown', keyDown);
 //stops arrow keys from scrolling
-window.addEventListener("keydown", function(e) {
-    if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) {
-        e.preventDefault();
+window.addEventListener('keydown', function(e) {
+    if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1 && e.target == this.document.body) {
+			e.preventDefault();
     }
 }, false);
 
