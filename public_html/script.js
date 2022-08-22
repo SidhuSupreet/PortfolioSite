@@ -195,9 +195,11 @@ function drawSnake() {
 
 function drawScore() {
 	ctx.fillStyle = 'white';
+	ctx.font = "20px Verdana";
+	ctx.fillText("Score: " + score, 20, 30);
 	ctx.font = "10px Verdana"
-	ctx.fillText("Score: " + score, 20, 20);
-	ctx.fillText("High Score: " + localStorage.getItem('highScore'), canvas.width-100, 20);
+	ctx.fillText("Supreet's High Score: 52" , canvas.width-145, 20);
+	ctx.fillText("You're High Score: " + localStorage.getItem('highScore'), canvas.width-135, 40);
 
 
 }
