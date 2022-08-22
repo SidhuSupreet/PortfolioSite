@@ -305,6 +305,10 @@ h6 {font-size: 16px;}
     text-align: center;
 }
 
+.high {
+    color: var(--buttonColor);
+}
+
 
 .post-wrapper{
     display: grid;
