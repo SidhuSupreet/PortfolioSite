@@ -21,19 +21,19 @@ for (var i=0; themeDots.length > i; i++){
 
 function setTheme(mode){
 	if(mode == 'light'){
-		document.getElementById('theme-style').href = 'default.css'
+		document.getElementById('theme-style').href = 'css/default.css'
 	}
 
 	if(mode == 'blue'){
-		document.getElementById('theme-style').href = 'blue.css'
+		document.getElementById('theme-style').href = 'css/blue.css'
 	}
 
 	if(mode == 'green'){
-		document.getElementById('theme-style').href = 'green.css'
+		document.getElementById('theme-style').href = 'css/green.css'
 	}
 
 	if(mode == 'purple'){
-		document.getElementById('theme-style').href = 'purple.css'
+		document.getElementById('theme-style').href = 'css/purple.css'
 	}
 
 	localStorage.setItem('theme', mode)
@@ -198,7 +198,7 @@ function drawScore() {
 	ctx.font = "20px Verdana";
 	ctx.fillText("Score: " + score, 20, 30);
 	ctx.font = "10px Verdana"
-	ctx.fillText("Supreet's High Score: 52" , canvas.width-145, 20);
+	ctx.fillText("Supreet's Best: 52" , canvas.width-135, 20);
 	ctx.fillText("You're High Score: " + localStorage.getItem('highScore'), canvas.width-135, 40);
 
 
@@ -215,28 +215,28 @@ window.addEventListener('keydown', function(e) {
 
 function keyDown(event){
 	//up
-	if(event.keyCode == 38 || event.keyCode == 87){
+	if(event.keyCode == 38){
 		// if (velY == 1)
 		// 	return;
 		velY = -1;
 		velX = 0;
 	}
 	//down
-	if(event.keyCode == 40 || event.keyCode == 83){
+	if(event.keyCode == 40){
 		// if (velY == -1)
 		// 	return;
 		velY = 1;
 		velX = 0;
 	}
 	//left
-	if(event.keyCode == 37 || event.keyCode == 65){
+	if(event.keyCode == 37){
 		// if (velX == 1)
 		// 	return;
 		velY = 0;
 		velX = -1;
 	}
 	//right
-	if(event.keyCode == 39 || event.keyCode == 68){
+	if(event.keyCode == 39){
 		// if (velX == -1)
 		// 	return;
 		velY = 0;
