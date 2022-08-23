@@ -39,7 +39,7 @@ p, li, span, label, input, textarea{
 
 a{
     text-decoration: none;
-    color: #17a2b8
+    color: #17a2b8;
 }
 
 ul{
@@ -385,6 +385,56 @@ h6 {font-size: 16px;}
     border: 1px solid var(--borderColor);
     font-size: 14px;
 }
+
+
+.container {
+	display: flex; 
+	align-items: center; 
+	justify-content: center;
+	flex-wrap: wrap;
+	align-content: center;
+}
+.column {
+	flex-direction: column;
+}
+
+#footer {
+	height: 6em;
+	text-align: center;
+	background-color: #F0F0F0;
+}
+
+.socials {
+    display: flex; 
+	align-items: center; 
+	justify-content: center;
+	flex-wrap: wrap;
+	align-content: center;
+}
+
+#social-container * {
+	padding: 6px;
+	margin-bottom: 6px;
+}
+
+#social-container a {
+	color: #575757;
+	transition: .4s;
+}
+
+#social-container a:hover {
+	color: var(--secondaryText);
+}
+
+.social-link {
+    color: #fff;
+}
+
+#copyright {
+	color: #8d8d8d;
+	font-size:14px;
+}
+
 
 
 #submit-btn{
